@@ -20,6 +20,7 @@ impl MyEguiApp {
 
 impl eframe::App for MyEguiApp {
     fn update(&mut self, ctx: &egui::Context, frame: &mut eframe::Frame) {
+        #[allow(unused_variables)]
         egui::CentralPanel::default().show(ctx, |ui| {
             ui.heading("Hello World!");
         });
